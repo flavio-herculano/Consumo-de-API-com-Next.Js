@@ -1,4 +1,4 @@
-import '../styles/style.css'
+import '../styles/head.module.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
