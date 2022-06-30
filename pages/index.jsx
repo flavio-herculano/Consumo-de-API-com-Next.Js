@@ -13,15 +13,15 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <section className={Styles.Container}>
-      <div className={Styles.List}>
+      <ul className={Styles.List}>
         {posts.map((post) => (
-          <ul className={Styles.CardButton}>
-            <li className={Styles.li} key={post.id}>
+          <Link href={`/posts/${post.id}`}>
+            <li className={Styles.CardButton} key={post.id}>
               <h1 className={Styles.cardTitle}>{post.title}</h1>
             </li>
-          </ul>
+          </Link>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }
