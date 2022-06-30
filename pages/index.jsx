@@ -16,11 +16,11 @@ export default function Home({ posts }) {
       <div className={Styles.List}>
         {posts.map((post) => (
           <Link href={`/posts/${post.id}`}>
-            <button className={Styles.CardButton}>
+            <ul className={Styles.CardButton}>
               <li className={Styles.li} key={post.id}>
                 <h1 className={Styles.cardTitle}>{post.title}</h1>
               </li>
-            </button>
+            </ul>
           </Link>
         ))}
       </div>
