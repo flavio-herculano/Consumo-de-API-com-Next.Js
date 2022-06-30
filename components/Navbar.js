@@ -1,12 +1,20 @@
 import React, { Component } from "react";
 import styles from "../styles/head.module.css";
+import Link from "next/link";
 
 export default class Head extends Component {
   render() {
     return (
       <header className={styles.header}>
         <div className={styles.content}>
-          <img src="/images/logo-imob-520.png" alt="imob-logo" height={32} />
+          <Link href={`/`}>
+            <img
+              className={styles.img}
+              src="/images/logo-imob-520.png"
+              alt="imob-logo"
+              height={32}
+            />
+          </Link>
 
           <div className={styles.divMenuItems}>
             <div className={styles.divWhats}>
