@@ -10,14 +10,19 @@ export async function getStaticProps() {
   };
 }
 
-export default function Posts({ posts }) {
+export default function Home({ posts }) {
   return (
     <section className={Styles.Container}>
       <ul className={Styles.List}>
         {posts.map((post) => (
-          <li className={Styles.CardButton} key={post.id}>
-            <h1 className={Styles.cardTitle}>{post.title}</h1>
-          </li>
+          <>
+            <li className={Styles.CardButton} key={post.id}>
+              <h1 className={Styles.cardTitle}>{post.title}</h1>
+            </li>
+            <Link href={`/posts/${post.id}`}>
+              <a>Visualizar</a>
+            </Link>
+          </>
         ))}
       </ul>
     </section>
