@@ -15,13 +15,14 @@ export default function Home({ posts }) {
     <section className={Styles.Container}>
       <div className={Styles.List}>
         {posts.map((post) => (
-          <Link href={`/posts/${post.id}`}>
-            <ul className={Styles.CardButton}>
-              <li className={Styles.li} key={post.id}>
-                <h1 className={Styles.cardTitle}>{post.title}</h1>
-              </li>
-            </ul>
-          </Link>
+          <ul className={Styles.CardButton}>
+            <li className={Styles.li} key={post.id}>
+              <h1 className={Styles.cardTitle}>{post.title}</h1>
+              <Link href={`/posts/${post.id}`}>
+                <a>Visualizar</a>
+              </Link>
+            </li>
+          </ul>
         ))}
       </div>
     </section>
