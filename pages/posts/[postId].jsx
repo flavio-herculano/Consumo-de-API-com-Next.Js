@@ -33,7 +33,8 @@ export default function Post({ post }) {
   return (
     <section className={Styles.ContainerPost}>
       <h1 className={Styles.Title}>{post.id}° Post</h1>
-      <p className={Styles.Paragraph}>Título: {post.title}</p>
+      <p className={Styles.Title}>{post.title}</p>
+      <p className={Styles.Paragraph}>{post.body}</p>
       <Link href="/">
         <button className={Styles.Button}>Voltar</button>
       </Link>
