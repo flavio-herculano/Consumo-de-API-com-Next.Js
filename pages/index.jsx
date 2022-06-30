@@ -1,4 +1,3 @@
-import Head from "../components/Head";
 import Styles from "../styles/card.module.css";
 
 export async function getStaticProps() {
@@ -13,14 +12,13 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <section className={Styles.Container}>
-      <Head />
       <div className={Styles.List}>
         {posts.map((post) => (
-          <div className={Styles.Card}>
-            <div key={post.id}>
+          <ul className={Styles.Card}>
+            <li className={Styles.li} key={post.id}>
               <h1 className={Styles.cardTitle}>{post.title}</h1>
-            </div>
-          </div>
+            </li>
+          </ul>
         ))}
       </div>
     </section>
