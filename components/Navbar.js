@@ -17,6 +17,13 @@ export default class Head extends Component {
           </Link>
 
           <div className={styles.divMenuItems}>
+            <div className={styles.dropdown}>
+              <button className={styles.dropbtn}>Pesquisar</button>
+              <div className={styles.dropdownContent}>
+                <a href="https://google.com">Google</a>
+                <a href="https://youtube.com">Youtube</a>
+              </div>
+            </div>
             <div className={styles.divWhats}>
               <img src="images/whatsapp.png" alt="" height={24} />
               <a
@@ -26,7 +33,6 @@ export default class Head extends Component {
                 11 9 8888-6542
               </a>
             </div>
-            <img src="/images/hamburg.png" alt="" />
           </div>
         </div>
       </header>
