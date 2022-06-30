@@ -17,11 +17,12 @@ export default function Home({ posts }) {
         {posts.map((post) => (
           <>
             <li className={Styles.CardButton} key={post.id}>
-              <h1 className={Styles.cardTitle}>{post.title}</h1>
+              <Link href={`/posts/${post.id}`}>
+                <h1 className={Styles.cardTitle}>{post.title}</h1>
+
+                <a>Visualizar</a>
+              </Link>
             </li>
-            <Link href={`/posts/${post.id}`}>
-              <a>Visualizar</a>
-            </Link>
           </>
         ))}
       </ul>
