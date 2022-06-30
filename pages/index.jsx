@@ -19,8 +19,6 @@ export default function Home({ posts }) {
             <li className={Styles.CardButton} key={post.id}>
               <Link href={`/posts/${post.id}`}>
                 <h1 className={Styles.cardTitle}>{post.title}</h1>
-
-                <a>Visualizar</a>
               </Link>
             </li>
           </>
