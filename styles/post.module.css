@@ -1,0 +1,28 @@
+.Button {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 32px;
+  padding: 25px 64px;
+}
+.Button:hover {
+  border: none;
+  border-radius: 8px;
+  color: #004d8b;
+  background-color: #ccc;
+}
+.Title {
+  font-weight: bold;
+  font-size: 32px;
+  color: white;
+}
+.Paragraph {
+  font-size: 24px;
+  color: white;
+}
+.ContainerPost {
+  width: 87.1%;
+  gap: 64px;
+  align-items: center;
+}
